@@ -1,0 +1,13 @@
+#include "ftpserver.h"
+#include <QApplication>
+#include <QMetaType>
+//qRegisterMetaType<PVCI_CAN_OBJ>("PVCI_CAN_OBJ");
+
+int main(int argc, char *argv[])
+{
+    QApplication a(argc, argv);
+    ftpServer w;
+    w.show();
+
+    return a.exec();
+}
